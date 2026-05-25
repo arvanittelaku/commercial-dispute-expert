@@ -14,7 +14,10 @@ export default function AboutPage() {
   return (
     <>
       <ContentSection className="!py-10">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About" }]} />
+        <Breadcrumb
+          currentPath="/about"
+          items={[{ label: "Home", href: "/" }, { label: "About" }]}
+        />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">About us</h1>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground">
           {siteConfig.connectorPitch} We are not a law firm and we do not provide legal advice to

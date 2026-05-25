@@ -50,6 +50,7 @@ export default async function CaseTypePage({ params }: Props) {
     <>
       <ContentSection className="!py-10">
         <Breadcrumb
+          currentPath={`/case-types/${slug}`}
           items={[
             { label: "Home", href: "/" },
             { label: "Case types", href: "/case-types" },

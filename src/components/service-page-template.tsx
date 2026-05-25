@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { CTABanner } from "@/components/cta-banner";
-import { FAQPageJsonLd } from "@/components/json-ld";
+import { FAQPageJsonLd, ServiceJsonLd } from "@/components/json-ld";
 import { servicesContent, type ServiceContent } from "@/lib/services-content";
 import { CheckCircle2 } from "lucide-react";
 
@@ -14,7 +14,9 @@ export function ServicePageTemplate({ service }: { service: ServiceContent }) {
   return (
     <>
       <FAQPageJsonLd faqs={service.faqs} />
+      <ServiceJsonLd service={service} />
       <Breadcrumb
+        currentPath={service.path}
         items={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

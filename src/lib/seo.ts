@@ -3,9 +3,11 @@ import { siteConfig } from "@/config/site";
 
 const siteUrl = siteConfig.domain.replace(/\/$/, "");
 
+/** Canonical URL — homepage has no trailing slash (matches sitemap) */
 export function absoluteUrl(path: string): string {
+  if (path === "/" || path === "") return siteUrl;
   const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `${siteUrl}${normalized}`;
+  return `${siteUrl}${normalized.replace(/\/+$/, "")}`;
 }
 
 export type PageSeo = {
@@ -32,10 +34,17 @@ export function buildMetadata({
   return {
     title: fullTitle,
     description,
-    keywords,
+    ...(keywords?.length ? { keywords } : {}),
     alternates: { canonical: url },
+    robots: noIndex
+      ? { index: false, follow: false, googleBot: { index: false, follow: false } }
+      : {
+          index: true,
+          follow: true,
+          googleBot: { index: true, follow: true, "max-image-preview": "large" },
+        },
     openGraph: {
-      type: path === "/" ? "website" : "article",
+      type: path.startsWith("/insights/") ? "article" : "website",
       locale: "en_GB",
       url,
       siteName: siteConfig.businessName,
@@ -49,8 +58,16 @@ export function buildMetadata({
       description,
       images: [absoluteUrl("/opengraph-image")],
     },
-    robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
   };
+}
+
+export function buildNotFoundMetadata(): Metadata {
+  return buildMetadata({
+    title: "Page not found",
+    description: "The page you requested could not be found on Commercial Dispute Expert.",
+    path: "/404",
+    noIndex: true,
+  });
 }
 
 export const defaultKeywords = [

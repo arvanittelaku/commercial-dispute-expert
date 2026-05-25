@@ -1,7 +1,10 @@
 import { Breadcrumb } from "@/components/breadcrumb";
 import { CTABanner } from "@/components/cta-banner";
 import { ContentSection } from "@/components/content-section";
+import { FAQAccordion } from "@/components/faq-accordion";
+import { FAQPageJsonLd } from "@/components/json-ld";
 import { StatsTable } from "@/components/stats-table";
+import { FEES_FAQS } from "@/lib/fees-faqs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -15,8 +18,12 @@ export const metadata = buildMetadata({
 export default function FeesPage() {
   return (
     <>
+      <FAQPageJsonLd faqs={FEES_FAQS} />
       <ContentSection className="!py-10">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Fees guide" }]} />
+        <Breadcrumb
+          currentPath="/fees"
+          items={[{ label: "Home", href: "/" }, { label: "Fees guide" }]}
+        />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">
           Commercial dispute expert witness fees (UK)
         </h1>
@@ -47,6 +54,13 @@ export default function FeesPage() {
           </a>
           .
         </p>
+
+        <h2 className="mt-12 text-xl font-bold text-charcoal sm:text-2xl">
+          Frequently asked questions
+        </h2>
+        <div className="mt-6">
+          <FAQAccordion faqs={FEES_FAQS} />
+        </div>
       </ContentSection>
 
       <CTABanner />

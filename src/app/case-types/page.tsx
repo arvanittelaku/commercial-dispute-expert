@@ -16,7 +16,10 @@ export default function CaseTypesHubPage() {
   return (
     <>
       <ContentSection className="!py-10">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Case types" }]} />
+        <Breadcrumb
+          currentPath="/case-types"
+          items={[{ label: "Home", href: "/" }, { label: "Case types" }]}
+        />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">Case types</h1>
         <p className="mt-4 max-w-3xl text-lg text-foreground">
           Browse common commercial dispute scenarios where solicitors instruct forensic accountants

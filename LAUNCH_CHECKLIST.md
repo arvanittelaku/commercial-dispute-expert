@@ -35,6 +35,14 @@
 - [ ] Run Lighthouse on homepage and one service page (target: good CWV)
 - [ ] Confirm `robots.txt` allows crawling
 
+## SEO (technical)
+
+- [ ] Run `npm run seo:verify:all` before each release
+- [ ] `NEXT_PUBLIC_SITE_URL` matches live domain (no trailing slash)
+- [ ] Replace `[PLACEHOLDER]` in `site.ts` before expecting rich results
+- [ ] Google Search Console + Bing: submit `sitemap.xml`
+- [ ] See `docs/SEO.md` and `POST_LAUNCH_SEO.md` for content/backlinks
+
 ## Contact / leads
 
 - [ ] Add row 1 headers on tab **Sheet8** (see `docs/google-sheets.md`)

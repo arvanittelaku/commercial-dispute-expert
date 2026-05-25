@@ -14,7 +14,10 @@ export const metadata = buildMetadata({
 export default function PrivacyPolicyPage() {
   return (
     <PageContainer>
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Privacy policy" }]} />
+      <Breadcrumb
+        currentPath="/privacy-policy"
+        items={[{ label: "Home", href: "/" }, { label: "Privacy policy" }]}
+      />
       <h1 className={PAGE_TITLE_CLASS}>Privacy policy</h1>
       <p className="mt-4 text-sm text-foreground/70">Last updated: May 2026</p>
 

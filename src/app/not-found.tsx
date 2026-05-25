@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { ContentSection } from "@/components/content-section";
+import { buildNotFoundMetadata } from "@/lib/seo";
+
+export const metadata = buildNotFoundMetadata();
 
 export default function NotFound() {
   return (

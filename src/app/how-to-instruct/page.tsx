@@ -17,7 +17,10 @@ export default function HowToInstructPage() {
   return (
     <>
       <ContentSection className="!py-10">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "How to instruct" }]} />
+        <Breadcrumb
+          currentPath="/how-to-instruct"
+          items={[{ label: "Home", href: "/" }, { label: "How to instruct" }]}
+        />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">How to instruct us</h1>
         <p className="mt-6 max-w-3xl text-lg text-foreground">
           Confidential initial discussions for solicitors and counsel. We assess suitability and

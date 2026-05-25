@@ -9,7 +9,9 @@
     "lint": "eslint",
     "seo:generate": "tsx scripts/generate-seo.ts",
     "seo:verify": "tsx scripts/verify-seo-sitemap.ts",
-    "seo:verify:ssr": "tsx scripts/verify-seo-ssr.ts"
+    "seo:verify:ssr": "tsx scripts/verify-seo-ssr.ts",
+    "seo:verify:canonical": "tsx scripts/verify-seo-canonical.ts",
+    "seo:verify:all": "npm run seo:verify && npm run seo:verify:ssr && npm run seo:verify:canonical"
   },
   "dependencies": {
     "clsx": "^2.1.1",

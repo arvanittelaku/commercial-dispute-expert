@@ -8,6 +8,8 @@ export type InsightFrontmatter = {
   title: string;
   description: string;
   date: string;
+  /** Optional content update date (ISO) for sitemap lastmod and Article schema */
+  modified?: string;
   author: string;
   tags: string[];
   slug: string;
@@ -37,10 +39,22 @@ export function getInsightBySlug(slug: string): InsightPost | null {
     title: data.title as string,
     description: data.description as string,
     date: data.date as string,
+    modified: data.modified as string | undefined,
     author: data.author as string,
     tags: (data.tags as string[]) ?? [],
     content,
   };
+}
+
+/** Related posts sharing at least one tag (excludes current slug) */
+export function getRelatedInsights(slug: string, limit = 3): InsightPost[] {
+  const current = getInsightBySlug(slug);
+  if (!current) return [];
+
+  const tagSet = new Set(current.tags);
+  return getAllInsights()
+    .filter((p) => p.slug !== slug && p.tags.some((t) => tagSet.has(t)))
+    .slice(0, limit);
 }
 
 export function getAllInsights(): InsightPost[] {

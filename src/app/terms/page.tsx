@@ -13,7 +13,10 @@ export const metadata = buildMetadata({
 export default function TermsPage() {
   return (
     <PageContainer>
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms of use" }]} />
+      <Breadcrumb
+        currentPath="/terms"
+        items={[{ label: "Home", href: "/" }, { label: "Terms of use" }]}
+      />
       <h1 className={PAGE_TITLE_CLASS}>Terms of use</h1>
       <p className="mt-4 text-sm text-foreground/70">Last updated: May 2026</p>
 

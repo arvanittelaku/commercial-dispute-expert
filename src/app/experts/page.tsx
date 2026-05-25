@@ -16,7 +16,10 @@ export default function ExpertsPage() {
   return (
     <>
       <ContentSection className="!py-10">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Experts" }]} />
+        <Breadcrumb
+          currentPath="/experts"
+          items={[{ label: "Home", href: "/" }, { label: "Experts" }]}
+        />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">
           Our commercial dispute expert witnesses
         </h1>

@@ -8,6 +8,10 @@ import {
   buildPublicUrlInventory,
   CANONICAL_HOST,
 } from "../src/lib/seo/publicUrlInventory";
+import {
+  buildPathLastModMap,
+  lastModForPath,
+} from "../src/lib/seo/sitemap-lastmod";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
@@ -57,10 +61,15 @@ function escapeXml(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
-function renderSitemap(urls: string[], lastmod: string): string {
+function renderSitemap(
+  urls: string[],
+  defaultLastmod: string,
+  pathLastMod: Record<string, string>,
+): string {
   const entries = urls
     .map((loc) => {
       const pathname = new URL(loc).pathname;
+      const lastmod = lastModForPath(pathname, pathLastMod, defaultLastmod);
       return `  <url>
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
@@ -95,6 +104,7 @@ Sitemap: ${host}/sitemap.xml
 function main(): void {
   const inventory = buildPublicUrlInventory(CANONICAL_HOST);
   const lastmod = todayUtc();
+  const pathLastMod = buildPathLastModMap(lastmod);
 
   if (!fs.existsSync(PUBLIC_DIR)) {
     fs.mkdirSync(PUBLIC_DIR, { recursive: true });
@@ -103,7 +113,11 @@ function main(): void {
   const sitemapPath = path.join(PUBLIC_DIR, "sitemap.xml");
   const robotsPath = path.join(PUBLIC_DIR, "robots.txt");
 
-  fs.writeFileSync(sitemapPath, renderSitemap(inventory.allUrls, lastmod), "utf8");
+  fs.writeFileSync(
+    sitemapPath,
+    renderSitemap(inventory.allUrls, lastmod, pathLastMod),
+    "utf8",
+  );
   fs.writeFileSync(robotsPath, renderRobots(inventory.canonicalHost), "utf8");
 
   const insightCount = inventory.allPaths.filter((p) => p.startsWith("/insights/")).length;

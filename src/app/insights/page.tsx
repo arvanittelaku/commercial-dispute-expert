@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { BlogJsonLd } from "@/components/json-ld";
 import { ContentSection } from "@/components/content-section";
 import { buildMetadata } from "@/lib/seo";
 import { getAllInsights } from "@/lib/mdx";
@@ -16,7 +17,11 @@ export default function InsightsIndexPage() {
 
   return (
     <ContentSection className="!py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Insights" }]} />
+      <BlogJsonLd />
+      <Breadcrumb
+        currentPath="/insights"
+        items={[{ label: "Home", href: "/" }, { label: "Insights" }]}
+      />
       <h1 className="text-3xl font-bold text-charcoal md:text-4xl">Insights</h1>
       <p className="mt-6 max-w-3xl text-lg text-foreground">
         Practical guidance for legal professionals on forensic accounting, quantum and expert witness

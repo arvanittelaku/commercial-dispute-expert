@@ -29,3 +29,5 @@ jobs:
       - run: npm run seo:verify
 
       - run: npm run seo:verify:ssr
+
+      - run: npm run seo:verify:canonical

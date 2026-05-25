@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { PageContainer } from "@/components/page-container";
 import { PAGE_TITLE_CLASS } from "@/lib/ui-classes";
 import { ArticleJsonLd } from "@/components/json-ld";
+import { RelatedInsights } from "@/components/related-insights";
 import { CTABanner } from "@/components/cta-banner";
 import { buildMetadata } from "@/lib/seo";
 import { getInsightBySlug, getInsightSlugs } from "@/lib/mdx";
@@ -20,12 +21,23 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const post = getInsightBySlug(slug);
   if (!post) return {};
-  return buildMetadata({
+  const meta = buildMetadata({
     title: post.title,
     description: post.description,
     path: `/insights/${slug}`,
     keywords: post.tags,
   });
+
+  const modified = post.modified ?? post.date;
+  return {
+    ...meta,
+    openGraph: {
+      ...meta.openGraph,
+      type: "article",
+      publishedTime: post.date,
+      modifiedTime: modified,
+    },
+  };
 }
 
 const mdxComponents = {
@@ -68,10 +80,12 @@ export default async function InsightArticlePage({ params }: Props) {
         title={post.title}
         description={post.description}
         date={post.date}
+        modified={post.modified}
         slug={post.slug}
         author={post.author}
       />
       <Breadcrumb
+        currentPath={`/insights/${slug}`}
         items={[
           { label: "Home", href: "/" },
           { label: "Insights", href: "/insights" },
@@ -103,6 +117,8 @@ export default async function InsightArticlePage({ params }: Props) {
           View our experts
         </Link>
       </aside>
+
+      <RelatedInsights slug={slug} />
 
       <aside className="mt-8">
         <p className="text-sm font-medium text-foreground/60">Related services</p>
