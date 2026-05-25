@@ -1,0 +1,26 @@
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  directory = "netlify/functions"
+
+# Production: Next.js route handles Sheets + webhook (do not force redirect here).
+# Uncomment only for function-only / netlify dev without the Next API route:
+# [[redirects]]
+#   from = "/api/submit-lead"
+#   to = "/.netlify/functions/submit-lead"
+#   status = 200
+#   force = true
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"

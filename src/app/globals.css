@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #334155;
+  --charcoal: #1c2b3a;
+  --brand-green: #1b5e20;
+  --muted: #f1f5f9;
+  --border: #e2e8f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-charcoal: var(--charcoal);
+  --color-brand-green: var(--brand-green);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-source-sans);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+/* Long emails/URLs in content and forms */
+#main-content {
+  min-width: 0;
+}
+
+.prose-cde {
+  overflow-wrap: break-word;
+}
+
+.prose-cde h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+@media (min-width: 640px) {
+  .prose-cde h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.prose-cde h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+@media (min-width: 640px) {
+  .prose-cde h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.prose-cde pre,
+.prose-cde table {
+  max-width: 100%;
+}
+
+.prose-cde pre {
+  overflow-x: auto;
+}
+
+.prose-cde table {
+  display: block;
+  overflow-x: auto;
+}
+
+.prose-cde p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: var(--foreground);
+}
+
+.prose-cde ul {
+  margin-bottom: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.prose-cde li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-cde a {
+  color: var(--brand-green);
+  text-decoration: underline;
+}
+
+/* Cookie consent — GPU-friendly transforms to avoid CLS */
+@keyframes cde-cookie-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cde-cookie-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cde-cookie-modal-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 640px) {
+  @keyframes cde-cookie-modal-up {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+.cde-cookie-banner-enter {
+  animation: cde-cookie-slide-up 0.35s ease-out both;
+}
+
+.cde-cookie-banner-panel {
+  will-change: transform;
+}
+
+.cde-cookie-overlay-enter {
+  animation: cde-cookie-fade-in 0.25s ease-out both;
+}
+
+.cde-cookie-modal-enter {
+  animation: cde-cookie-modal-up 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cde-cookie-banner-enter,
+  .cde-cookie-overlay-enter,
+  .cde-cookie-modal-enter {
+    animation: none;
+  }
+}
