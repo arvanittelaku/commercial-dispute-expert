@@ -11,9 +11,9 @@ export const siteConfig = {
   brandShort: "CommercialDisputeExpert",
   tagline: "Commercial disputes. Financial clarity. Court-ready evidence.",
   connectorPitch:
-    "CommercialDisputeExpert.com connects UK solicitors and barristers with qualified commercial dispute expert witnesses — forensic accounting, quantum analysis and CPR Part 35 compliant, court-ready reports.",
+    "CommercialDisputeExpert.com connects UK solicitors and barristers with qualified commercial dispute expert witnesses - forensic accounting, quantum analysis and CPR Part 35 compliant, court-ready reports.",
   description:
-    "We connect legal professionals with independent commercial dispute expert witnesses and forensic accountants across England & Wales. Not a law firm — we do not provide legal advice.",
+    "We connect legal professionals with independent commercial dispute expert witnesses and forensic accountants across England & Wales. Not a law firm - we do not provide legal advice.",
 
   expert: {
     slug: "lead-expert",
@@ -21,8 +21,8 @@ export const siteConfig = {
     title: "Commercial Dispute Expert Witness",
     credentials: [
       "[PLACEHOLDER] FCA / ACA / ACCA",
-      "[PLACEHOLDER] MAE — Member, Academy of Experts",
-      "[PLACEHOLDER] CFF — Certified in Financial Forensics",
+      "[PLACEHOLDER] MAE - Member, Academy of Experts",
+      "[PLACEHOLDER] CFF - Certified in Financial Forensics",
     ],
     jurisdictions: ["England & Wales", "[PLACEHOLDER] International arbitration"],
     yearsExperience: "[PLACEHOLDER]",
@@ -61,14 +61,14 @@ export const siteConfig = {
   testimonials: [
     {
       quote:
-        "[PLACEHOLDER] Testimonial from solicitor or barrister — replace with approved quote before publication.",
+        "[PLACEHOLDER] Testimonial from solicitor or barrister - replace with approved quote before publication.",
       author: "[PLACEHOLDER] Name",
       role: "[PLACEHOLDER] Solicitor / Barrister",
       firm: "[PLACEHOLDER] Firm name",
     },
     {
       quote:
-        "[PLACEHOLDER] Second testimonial — clear, concise expert reports and responsive turnaround.",
+        "[PLACEHOLDER] Second testimonial - clear, concise expert reports and responsive turnaround.",
       author: "[PLACEHOLDER] Name",
       role: "[PLACEHOLDER] Partner",
       firm: "[PLACEHOLDER] Law firm",

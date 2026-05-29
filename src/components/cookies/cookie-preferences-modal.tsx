@@ -16,7 +16,7 @@ type CookiePreferencesModalProps = {
   onAcceptAll: () => void;
   onRejectNonEssential: () => void;
   onClose: () => void;
-  /** When true, user already consented — Escape / backdrop closes without forcing a choice */
+  /** When true, user already consented - Escape / backdrop closes without forcing a choice */
   showClose: boolean;
 };
 

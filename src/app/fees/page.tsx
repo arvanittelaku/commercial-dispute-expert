@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Commercial Dispute Expert Witness Fees UK",
   description:
-    "Indicative UK expert witness fees and costs for commercial dispute forensic accounting — industry benchmarks, not a firm price list.",
+    "Indicative UK expert witness fees and costs for commercial dispute forensic accounting - industry benchmarks, not a firm price list.",
   path: "/fees",
   keywords: ["expert witness fees UK", "forensic accountant expert witness cost"],
 });
@@ -29,7 +29,7 @@ export default function FeesPage() {
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-foreground">
           This guide sets out <strong>indicative industry ranges</strong> to help solicitors budget
-          and plan instructions. It is not a quote from Commercial Dispute Expert — actual fees are
+          and plan instructions. It is not a quote from Commercial Dispute Expert - actual fees are
           agreed between you and the appointed expert based on scope, urgency and complexity.
         </p>
       </ContentSection>

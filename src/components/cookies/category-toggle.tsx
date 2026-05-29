@@ -48,7 +48,7 @@ export function CategoryToggle({
           }`}
         />
         <span className="sr-only">
-          {category.label} — {category.required || checked ? "on" : "off"}
+          {category.label} - {category.required || checked ? "on" : "off"}
         </span>
       </button>
     </div>

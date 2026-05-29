@@ -77,7 +77,7 @@ export function ContactForm({ formType = "contact", title }: ContactFormProps) {
             } | null;
             const code = errJson?.error;
 
-            // No Sheets/webhook configured — still allow Resend-only path
+            // No Sheets/webhook configured - still allow Resend-only path
             if (leadRes.status === 503 && code === "LEAD_DESTINATION_MISSING") {
               // continue to email action below
             } else if (code === "SHEETS_WRITE_FAILED") {

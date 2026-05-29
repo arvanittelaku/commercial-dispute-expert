@@ -39,7 +39,7 @@ export async function OPTIONS() {
 }
 
 /**
- * POST /api/submit-lead — Google Sheets row + optional n8n webhook (Full Name, Email, Phone, Brand).
+ * POST /api/submit-lead - Google Sheets row + optional n8n webhook (Full Name, Email, Phone, Brand).
  */
 export async function POST(request: Request) {
   let body: LeadBody;

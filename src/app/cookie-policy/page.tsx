@@ -77,11 +77,11 @@ export default function CookiePolicyPage() {
           see their privacy notices for details.
         </p>
         <ul>
-          <li>Google Analytics / Google Tag Manager — Google Ireland Ltd</li>
-          <li>Plausible Analytics — privacy-focused analytics (EU)</li>
-          <li>Hotjar — behaviour analytics</li>
-          <li>Meta Pixel — Meta Platforms Ireland Ltd</li>
-          <li>LinkedIn Insight Tag — LinkedIn Ireland Unlimited Company</li>
+          <li>Google Analytics / Google Tag Manager - Google Ireland Ltd</li>
+          <li>Plausible Analytics - privacy-focused analytics (EU)</li>
+          <li>Hotjar - behaviour analytics</li>
+          <li>Meta Pixel - Meta Platforms Ireland Ltd</li>
+          <li>LinkedIn Insight Tag - LinkedIn Ireland Unlimited Company</li>
         </ul>
 
         <h2>Google Consent Mode</h2>

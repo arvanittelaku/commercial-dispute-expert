@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function CTABanner({
   title = "Ready to instruct a commercial dispute expert witness?",
-  description = "Submit your case details and we will match you with a qualified UK expert — CPR Part 35 compliant. Response within one business day.",
+  description = "Submit your case details and we will match you with a qualified UK expert - CPR Part 35 compliant. Response within one business day.",
 }: {
   title?: string;
   description?: string;

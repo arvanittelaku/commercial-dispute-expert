@@ -6,7 +6,7 @@ type CookieSettingsButtonProps = {
   className?: string;
 };
 
-/** Footer control — reopens the preferences modal at any time */
+/** Footer control - reopens the preferences modal at any time */
 export function CookieSettingsButton({ className }: CookieSettingsButtonProps) {
   const consent = useCookieConsentOptional();
 

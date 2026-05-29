@@ -47,7 +47,7 @@ export async function submitContactForm(formData: FormData): Promise<ContactSubm
 
   const data = parsed.data;
   const recipient = process.env.CONTACT_EMAIL ?? "info@commercialdisputeexpert.com";
-  const subject = `[${data.formType === "instruct" ? "Instruction" : "Contact"}] ${data.caseType} — ${data.firm}`;
+  const subject = `[${data.formType === "instruct" ? "Instruction" : "Contact"}] ${data.caseType} - ${data.firm}`;
 
   const body = `
 New enquiry from commercialdisputeexpert.com
@@ -56,7 +56,7 @@ Type: ${data.formType}
 Name: ${data.name}
 Firm: ${data.firm}
 Email: ${data.email}
-Phone: ${data.phone || "—"}
+Phone: ${data.phone || "N/A"}
 Case type: ${data.caseType}
 
 Message:

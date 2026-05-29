@@ -56,7 +56,7 @@ export default function HomePage() {
             A commercial dispute expert witness is an independent forensic accountant or financial
             expert instructed to provide a court-admissible opinion on quantum, valuation or
             financial misconduct. Unlike litigation support behind the scenes, the expert&apos;s
-            primary duty is to the court under CPR Part 35 — whether appointed as a single joint
+            primary duty is to the court under CPR Part 35 - whether appointed as a single joint
             expert or by one party alone.
           </p>
           <p>

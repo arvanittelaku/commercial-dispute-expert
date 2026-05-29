@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 import { CASE_TYPES } from "@/lib/case-types";
 
 export const metadata = buildMetadata({
-  title: "Case Types — Commercial Dispute Expert Witness",
+  title: "Case Types - Commercial Dispute Expert Witness",
   description:
     "Commercial litigation and dispute case types where forensic accounting and expert witness evidence is commonly required in the UK.",
   path: "/case-types",

@@ -8,7 +8,7 @@ import { ANONYMISED_EXPERTS } from "@/lib/anonymised-experts";
 export const metadata = buildMetadata({
   title: "Our Commercial Dispute Expert Witnesses",
   description:
-    "UK forensic accounting and commercial dispute experts. Profiles available upon instruction — submit case details for a matched introduction.",
+    "UK forensic accounting and commercial dispute experts. Profiles available upon instruction - submit case details for a matched introduction.",
   path: "/experts",
 });
 
@@ -24,7 +24,7 @@ export default function ExpertsPage() {
           Our commercial dispute expert witnesses
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-foreground">
-          UK chartered accountants and forensic specialists. Profiles available upon instruction —
+          UK chartered accountants and forensic specialists. Profiles available upon instruction -
           submit your case details for a matched introduction.
         </p>
       </ContentSection>

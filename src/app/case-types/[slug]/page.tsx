@@ -61,7 +61,7 @@ export default async function CaseTypePage({ params }: Props) {
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground">{caseType.summary}</p>
         <p className="mt-4 max-w-3xl text-foreground">
           {siteConfig.brandShort} connects your firm with independent experts experienced in this
-          type of matter. Submit case details for a confidential introduction — CPR Part 35 compliant
+          type of matter. Submit case details for a confidential introduction - CPR Part 35 compliant
           reporting where required.
         </p>
         <h2 className="mt-10 text-xl font-bold text-charcoal">Related services</h2>

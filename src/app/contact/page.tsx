@@ -21,7 +21,7 @@ export default function ContactPage() {
       <h1 className="text-3xl font-bold text-charcoal md:text-4xl">Contact us</h1>
       <p className="mt-6 max-w-3xl text-lg text-foreground">
         Enquiries are treated confidentially. We respond to solicitors, barristers and authorised
-        representatives. Submit case details for expert matching — we do not publish fee quotes on
+        representatives. Submit case details for expert matching - we do not publish fee quotes on
         this site; see our{" "}
         <a href="/fees" className="font-medium text-brand-green underline">
           fees guide

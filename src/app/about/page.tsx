@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 
 export const metadata = buildMetadata({
-  title: "About — Commercial Dispute Expert Witness UK",
+  title: "About - Commercial Dispute Expert Witness UK",
   description: siteConfig.description,
   path: "/about",
 });
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <h2 className="text-xl font-bold text-charcoal">Independence</h2>
           <p className="mt-4 leading-relaxed text-foreground">
             Expert reports include the required statement of truth and declaration. Where analysis
-            does not support the instructing party&apos;s case, a credible expert says so — we only
+            does not support the instructing party&apos;s case, a credible expert says so - we only
             work with professionals who maintain that standard.
           </p>
         </section>

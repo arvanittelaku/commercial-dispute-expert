@@ -47,7 +47,7 @@ export function StatsTable() {
 
       <p className="mt-4 text-sm leading-relaxed text-foreground/80">
         Sources: Expert Evidence International; Civil Procedure Rules Part 35. Rates are indicative
-        industry benchmarks only — not a quote from Commercial Dispute Expert. Actual fees vary by
+        industry benchmarks only - not a quote from Commercial Dispute Expert. Actual fees vary by
         case complexity and expert seniority. See our{" "}
         <a href="/fees" className="font-medium text-brand-green underline">
           fees guide
