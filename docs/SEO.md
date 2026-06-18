@@ -19,7 +19,7 @@
 | WebSite | Global |
 | BreadcrumbList | All pages with `Breadcrumb` + `currentPath` |
 | Service | Each service page |
-| FAQPage | Service pages + `/fees` |
+| FAQPage | Service pages |
 | Article | Insight articles |
 | Blog | `/insights` index |
 

@@ -27,12 +27,12 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   ...buildMetadata({
-    title: "Commercial Dispute Expert Witness UK",
+    title: "Commercial Dispute Expert Witness",
     description: siteConfig.connectorPitch,
     path: "/",
     keywords: [
       "commercial dispute expert witness",
-      "forensic accounting expert witness UK",
+      "forensic accounting expert witness",
       "loss of profits expert witness",
     ],
   }),
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB">
+    <html lang="en">
       <body
         className={`${sourceSans.variable} min-h-screen min-w-0 overflow-x-clip antialiased`}
       >

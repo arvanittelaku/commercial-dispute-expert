@@ -14,8 +14,6 @@ export const APP_STATIC_PATHS = [
   "/about",
   "/services",
   "/case-types",
-  "/fees",
-  "/experts",
   "/how-to-instruct",
   "/contact",
   "/insights",

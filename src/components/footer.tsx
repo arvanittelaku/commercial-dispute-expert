@@ -56,11 +56,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/fees" className="hover:text-white">
-                  Fees guide
-                </Link>
-              </li>
-              <li>
                 <Link href="/about" className="hover:text-white">
                   About
                 </Link>
@@ -68,13 +63,8 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-white">About</h2>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-white">Contact</h2>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>
-                <Link href="/experts" className="hover:text-white">
-                  Our experts
-                </Link>
-              </li>
               <li>
                 <Link href="/contact" className="hover:text-white">
                   Contact
@@ -91,7 +81,7 @@ export function Footer() {
         <div className="mt-12 border-t border-white/20 px-2 pt-8 text-center text-xs leading-relaxed text-white/60 sm:px-0">
           <p>{siteConfig.description}</p>
           <p className="mt-2">
-            © {new Date().getFullYear()} {siteConfig.businessName}. England and Wales.{" "}
+            © {new Date().getFullYear()} {siteConfig.businessName}. All rights reserved.{" "}
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy
             </Link>

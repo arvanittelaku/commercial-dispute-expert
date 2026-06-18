@@ -11,9 +11,9 @@ export const siteConfig = {
   brandShort: "CommercialDisputeExpert",
   tagline: "Commercial disputes. Financial clarity. Court-ready evidence.",
   connectorPitch:
-    "CommercialDisputeExpert.com connects UK solicitors and barristers with qualified commercial dispute expert witnesses - forensic accounting, quantum analysis and CPR Part 35 compliant, court-ready reports.",
+    "CommercialDisputeExpert.com connects solicitors, counsel and law firms with qualified commercial dispute expert witnesses - forensic accounting, quantum analysis and court-ready expert reports.",
   description:
-    "We connect legal professionals with independent commercial dispute expert witnesses and forensic accountants across England & Wales. Not a law firm - we do not provide legal advice.",
+    "We connect legal professionals with independent commercial dispute expert witnesses and forensic accountants for litigation and arbitration. Not a law firm - we do not provide legal advice.",
 
   expert: {
     slug: "lead-expert",
@@ -24,7 +24,7 @@ export const siteConfig = {
       "[PLACEHOLDER] MAE - Member, Academy of Experts",
       "[PLACEHOLDER] CFF - Certified in Financial Forensics",
     ],
-    jurisdictions: ["England & Wales", "[PLACEHOLDER] International arbitration"],
+    jurisdictions: ["Courts and tribunals", "International arbitration"],
     yearsExperience: "[PLACEHOLDER]",
     expertAppointments: "[PLACEHOLDER]",
     bioSummary:
@@ -35,11 +35,11 @@ export const siteConfig = {
   contact: {
     phone: "[PLACEHOLDER] +44 20 XXXX XXXX",
     phoneTel: "+4420XXXXXXXX",
-    email: "info@commercialdisputeexpert.com",
+    email: "contact@commercialdisputeexpert.com",
     address: {
       line1: "[PLACEHOLDER] Office address line 1",
       line2: "[PLACEHOLDER] City, Postcode",
-      country: "United Kingdom",
+      country: "[PLACEHOLDER] Country",
     },
   },
 

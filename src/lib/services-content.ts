@@ -21,11 +21,11 @@ export const servicesContent: Record<string, ServiceContent> = {
     title: "Commercial Dispute Expert Witness",
     metaTitle: "Commercial Dispute Expert Witness",
     metaDescription:
-      "Independent commercial dispute expert witness services for solicitors. Forensic accounting, quantum analysis and CPR Part 35 compliant reports across England & Wales.",
+      "Independent commercial dispute expert witness services for legal professionals. Forensic accounting, quantum analysis and court-compliant expert reports.",
     path: "/services/commercial-dispute-expert-witness",
     keywords: [
       "commercial dispute expert witness",
-      "commercial dispute expert UK",
+      "commercial dispute expert witness",
       "forensic accountant commercial litigation",
     ],
     intro:
@@ -58,7 +58,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "What jurisdictions do you cover?",
         answer:
-          "Our primary focus is England & Wales. International arbitration instructions can be discussed where appropriate expertise and logistics align.",
+          "We support litigation and arbitration across multiple jurisdictions. Forum, governing law and logistics are confirmed at instruction.",
       },
       {
         question: "How quickly can you produce an initial report?",
@@ -80,7 +80,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     metaDescription:
       "Privileged litigation support for solicitors: financial analysis, quantum assessment and cross-examination preparation without expert disclosure.",
     path: "/services/litigation-support",
-    keywords: ["litigation support forensic accountant", "forensic accounting litigation support UK"],
+    keywords: ["litigation support forensic accountant", "forensic accounting litigation support"],
     intro:
       "Not every financial engagement requires a disclosed expert. Litigation support allows your legal team to understand the numbers, test the opposing case and prepare strategy behind the scenes - work that remains privileged when properly structured.",
     whenToInstruct: [
@@ -129,11 +129,11 @@ export const servicesContent: Record<string, ServiceContent> = {
   "loss-of-profits-quantum": {
     slug: "loss-of-profits-quantum",
     title: "Loss of Profits & Quantum",
-    metaTitle: "Loss of Profits Expert Witness UK",
+    metaTitle: "Loss of Profits Expert Witness",
     metaDescription:
-      "Loss of profits and quantum expert witness services for commercial litigation. Rigorous damages modelling for solicitors in England & Wales.",
+      "Loss of profits and quantum expert witness services for commercial litigation. Rigorous damages modelling for legal teams.",
     path: "/services/loss-of-profits-quantum",
-    keywords: ["loss of profits expert witness UK", "quantum expert witness commercial dispute"],
+    keywords: ["loss of profits expert witness", "quantum expert witness commercial dispute"],
     intro:
       "Loss of profits and broader quantum issues often decide the value of commercial claims. We build transparent damages models that withstand scrutiny from opponents, tribunals and courts - explaining not only the headline figure but the assumptions behind it.",
     whenToInstruct: [
@@ -183,7 +183,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     title: "Breach of Contract Damages",
     metaTitle: "Breach of Contract Expert Witness Damages",
     metaDescription:
-      "Expert witness damages analysis for breach of contract disputes. Financial quantification and forensic accounting for UK commercial litigation.",
+      "Expert witness damages analysis for breach of contract disputes. Financial quantification and forensic accounting for commercial litigation.",
     path: "/services/breach-of-contract-damages",
     keywords: ["breach of contract expert witness damages", "contract dispute forensic accountant"],
     intro:
@@ -220,7 +220,7 @@ export const servicesContent: Record<string, ServiceContent> = {
       {
         question: "What about international contracts?",
         answer:
-          "We can support matters with UK proceedings or arbitration seats; governing law and forum should be confirmed at instruction.",
+          "We can support matters in court proceedings or arbitration; governing law and forum should be confirmed at instruction.",
       },
       {
         question: "Do you work with construction contracts?",
@@ -237,7 +237,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     metaDescription:
       "Expert witness and valuation support for shareholder and partnership disputes. Forensic accounting for unfair prejudice and dissolution claims.",
     path: "/services/shareholder-partnership-disputes",
-    keywords: ["shareholder dispute expert witness", "partnership dispute forensic accountant UK"],
+    keywords: ["shareholder dispute expert witness", "partnership dispute forensic accountant"],
     intro:
       "Shareholder and partnership disputes combine contentious relationships with complex valuations and historical financial reconstruction. We provide independent analysis of value, distributions, director conduct impacts and loss arising from oppressive or unfair behaviour.",
     whenToInstruct: [
@@ -287,7 +287,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     title: "Business Valuation",
     metaTitle: "Business Valuation Expert Witness Litigation",
     metaDescription:
-      "Business valuation expert witness for commercial litigation, arbitration and dispute resolution. Independent opinions for legal teams in the UK.",
+      "Business valuation expert witness for commercial litigation, arbitration and dispute resolution. Independent opinions for legal teams.",
     path: "/services/business-valuation",
     keywords: ["business valuation expert witness litigation", "company valuation dispute expert"],
     intro:
@@ -339,7 +339,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     title: "Business Interruption",
     metaTitle: "Business Interruption Expert Witness",
     metaDescription:
-      "Business interruption expert witness and quantum analysis for insurance and commercial disputes. Forensic support for UK solicitors.",
+      "Business interruption expert witness and quantum analysis for insurance and commercial disputes. Forensic support for legal professionals.",
     path: "/services/business-interruption",
     keywords: ["business interruption expert witness", "BI claim forensic accountant"],
     intro:
@@ -445,7 +445,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     metaDescription:
       "CPR Part 35 compliant expert reports, joint statements and court testimony from a commercial dispute forensic accounting expert witness.",
     path: "/services/expert-reports-testimony",
-    keywords: ["CPR Part 35 expert report forensic accountant", "expert witness report UK commercial"],
+    keywords: ["CPR Part 35 expert report forensic accountant", "expert witness report commercial"],
     intro:
       "The expert report is the foundation of financial expert evidence. We prepare structured, readable reports that comply with CPR Part 35 and Practice Direction 35 - and we attend court, arbitration and expert meetings when testimony is required.",
     whenToInstruct: [
@@ -497,7 +497,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     metaDescription:
       "Expert witness and quantum support for commercial arbitration and mediation. LCIA, ICC and ad hoc proceedings - forensic accounting for legal teams.",
     path: "/services/arbitration-mediation",
-    keywords: ["arbitration expert witness forensic accounting", "mediation quantum expert UK"],
+    keywords: ["arbitration expert witness forensic accounting", "mediation quantum expert"],
     intro:
       "International and domestic arbitration, together with commercial mediation, often turn on the same financial questions as court litigation - with different procedural rules and timetables. We adapt expert evidence to arbitral institutions and mediation settings while maintaining independence.",
     whenToInstruct: [

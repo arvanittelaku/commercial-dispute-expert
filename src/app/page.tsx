@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Commercial Dispute Expert Witness Services for UK Solicitors & Law Firms"
+        title="Commercial Dispute Expert Witness Services for Solicitors & Law Firms"
         description={siteConfig.connectorPitch}
       />
 
@@ -29,7 +29,7 @@ export default function HomePage() {
 
       <ContentSection alt>
         <h2 className="text-xl font-bold text-balance break-words text-charcoal sm:text-2xl md:text-3xl">
-          Commercial dispute expert witness: key UK statistics
+          Commercial dispute expert witness: key industry statistics
         </h2>
         <div className="mt-6">
           <StatsTable />
@@ -38,7 +38,7 @@ export default function HomePage() {
 
       <ContentSection>
         <h2 className="text-xl font-bold text-balance break-words text-charcoal sm:text-2xl md:text-3xl">
-          Why UK solicitors trust our expert network
+          Why legal professionals trust our expert network
         </h2>
         <ul className="mt-6 list-disc space-y-2 pl-6 text-foreground">
           {TRUST_POINTS.map((point) => (
@@ -60,8 +60,8 @@ export default function HomePage() {
             expert or by one party alone.
           </p>
           <p>
-            UK litigation turns on credible damages models, clear methodology and sector-aware
-            analysis.{" "}
+            Commercial litigation and arbitration turn on credible damages models, clear methodology
+            and sector-aware analysis.{" "}
             <Link href="/how-to-instruct" className="font-medium text-brand-green underline">
               Read how to instruct
             </Link>{" "}

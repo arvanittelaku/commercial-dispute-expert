@@ -9,7 +9,7 @@ import { FileText, Mail, Phone } from "lucide-react";
 export const metadata = buildMetadata({
   title: "How to Instruct a Forensic Expert Witness",
   description:
-    "How to instruct Commercial Dispute Expert: engagement process, documents required, CPR Part 35 expert witness appointments for UK solicitors.",
+    "How to instruct Commercial Dispute Expert: engagement process, documents required and expert witness appointments for legal professionals.",
   path: "/how-to-instruct",
 });
 

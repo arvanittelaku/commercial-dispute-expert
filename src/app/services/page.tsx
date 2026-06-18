@@ -22,7 +22,7 @@ export default function ServicesHubPage() {
         />
         <h1 className="text-3xl font-bold text-charcoal md:text-4xl">Our services</h1>
         <p className="mt-6 max-w-3xl text-lg text-foreground">
-          {siteConfig.brandShort} matches UK solicitors with credentialed forensic accountants and
+          {siteConfig.brandShort} matches legal professionals with credentialed forensic accountants and
           commercial dispute expert witnesses. Each area below has a dedicated page for scope and
           instruction.
         </p>

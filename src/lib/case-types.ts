@@ -14,7 +14,7 @@ export const CASE_TYPES: CaseType[] = [
     summary:
       "Quantum and forensic accounting for contractual breach, delayed performance and consequential loss claims.",
     metaDescription:
-      "Commercial dispute expert witness for breach of contract damages and loss quantification in UK litigation.",
+      "Commercial dispute expert witness for breach of contract damages and loss quantification in commercial litigation.",
   },
   {
     slug: "shareholder-partnership",
@@ -23,7 +23,7 @@ export const CASE_TYPES: CaseType[] = [
     summary:
       "Unfair prejudice, buy-out valuations and partnership account-taking supported by independent financial evidence.",
     metaDescription:
-      "Expert witness support for shareholder disputes and partnership dissolution quantum in England & Wales.",
+      "Expert witness support for shareholder disputes and partnership dissolution quantum in commercial litigation.",
   },
   {
     slug: "professional-negligence",
@@ -41,7 +41,7 @@ export const CASE_TYPES: CaseType[] = [
     summary:
       "BI loss quantification and insurance-related financial disputes with transparent methodology.",
     metaDescription:
-      "Business interruption expert witness and quantum analysis for UK commercial and insurance disputes.",
+      "Business interruption expert witness and quantum analysis for commercial and insurance disputes.",
   },
   {
     slug: "fraud-asset-tracing",
@@ -57,7 +57,7 @@ export const CASE_TYPES: CaseType[] = [
     hubLabel: "International arbitration",
     title: "International Arbitration",
     summary:
-      "Expert reports and testimony for LCIA, ICC and ad hoc arbitration with UK-seated experience.",
+      "Expert reports and testimony for LCIA, ICC and ad hoc arbitration.",
     metaDescription:
       "Commercial dispute expert witness for international arbitration and cross-border quantum issues.",
   },

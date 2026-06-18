@@ -8,7 +8,7 @@ import { CASE_TYPES } from "@/lib/case-types";
 export const metadata = buildMetadata({
   title: "Case Types - Commercial Dispute Expert Witness",
   description:
-    "Commercial litigation and dispute case types where forensic accounting and expert witness evidence is commonly required in the UK.",
+    "Commercial litigation and dispute case types where forensic accounting and expert witness evidence is commonly required.",
   path: "/case-types",
 });
 

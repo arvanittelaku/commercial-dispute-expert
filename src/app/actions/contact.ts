@@ -46,7 +46,7 @@ export async function submitContactForm(formData: FormData): Promise<ContactSubm
   }
 
   const data = parsed.data;
-  const recipient = process.env.CONTACT_EMAIL ?? "info@commercialdisputeexpert.com";
+  const recipient = process.env.CONTACT_EMAIL ?? "contact@commercialdisputeexpert.com";
   const subject = `[${data.formType === "instruct" ? "Instruction" : "Contact"}] ${data.caseType} - ${data.firm}`;
 
   const body = `
@@ -85,7 +85,7 @@ ${data.message}
         return {
           ok: false,
           message:
-            "Unable to send your message. Please email info@commercialdisputeexpert.com directly.",
+            "Unable to send your message. Please email contact@commercialdisputeexpert.com directly.",
         };
       }
     } catch (e) {
@@ -93,7 +93,7 @@ ${data.message}
       return {
         ok: false,
         message:
-          "Unable to send your message. Please email info@commercialdisputeexpert.com directly.",
+          "Unable to send your message. Please email contact@commercialdisputeexpert.com directly.",
       };
     }
   } else {

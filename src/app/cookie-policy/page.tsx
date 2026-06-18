@@ -73,8 +73,8 @@ export default function CookiePolicyPage() {
         <h2>Third-party services</h2>
         <p>
           Third parties may set their own cookies when their scripts run. We only enable these
-          scripts after you grant the relevant category. Providers may process data outside the UK;
-          see their privacy notices for details.
+          scripts after you grant the relevant category. Providers may process data outside your
+          country; see their privacy notices for details.
         </p>
         <ul>
           <li>Google Analytics / Google Tag Manager - Google Ireland Ltd</li>
@@ -91,11 +91,11 @@ export default function CookiePolicyPage() {
           applied immediately when you save preferences.
         </p>
 
-        <h2>Legal basis (UK / EEA)</h2>
+        <h2>Legal basis (GDPR / ePrivacy)</h2>
         <p>
           Necessary cookies are used on the basis of legitimate interests in operating a secure,
           functional website. Analytics, marketing, and preference cookies rely on your consent
-          (UK GDPR / EU GDPR and the ePrivacy Directive). You may withdraw consent at any time via
+          under applicable data protection law (including GDPR and the ePrivacy Directive). You may withdraw consent at any time via
           Cookie settings; withdrawal does not affect the lawfulness of processing before
           withdrawal.
         </p>
@@ -117,7 +117,7 @@ export default function CookiePolicyPage() {
         <h2>Contact</h2>
         <p>
           Questions about this policy: use our{" "}
-          <a href="/contact">contact page</a> or email info@commercialdisputeexpert.com.
+          <a href="/contact">contact page</a> or email contact@commercialdisputeexpert.com.
         </p>
       </div>
     </PageContainer>

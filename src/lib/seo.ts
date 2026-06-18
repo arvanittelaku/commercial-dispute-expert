@@ -45,7 +45,7 @@ export function buildMetadata({
         },
     openGraph: {
       type: path.startsWith("/insights/") ? "article" : "website",
-      locale: "en_GB",
+      locale: "en",
       url,
       siteName: siteConfig.businessName,
       title: fullTitle,
@@ -72,7 +72,7 @@ export function buildNotFoundMetadata(): Metadata {
 
 export const defaultKeywords = [
   "commercial dispute expert witness",
-  "forensic accounting expert witness UK",
+  "forensic accounting expert witness",
   "loss of profits expert witness",
   "CPR Part 35 expert report",
 ];

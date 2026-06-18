@@ -28,7 +28,7 @@ export default function OgImage() {
           {siteConfig.brandShort}
         </div>
         <div style={{ fontSize: 26, marginTop: 24, color: "#cbd5e1", maxWidth: 800 }}>
-          Commercial dispute expert witness services for UK solicitors
+          Commercial dispute expert witness services for legal professionals
         </div>
       </div>
     ),

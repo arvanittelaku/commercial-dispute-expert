@@ -113,8 +113,8 @@ export default async function InsightArticlePage({ params }: Props) {
       <aside className="mt-12 rounded-lg border border-border bg-muted p-6">
         <p className="text-sm font-medium text-foreground/60">Author</p>
         <p className="mt-1 font-semibold text-charcoal">{post.author}</p>
-        <Link href="/experts" className="mt-2 inline-block text-sm text-brand-green hover:underline">
-          View our experts
+        <Link href="/contact" className="mt-2 inline-block text-sm text-brand-green hover:underline">
+          Instruct an expert
         </Link>
       </aside>
 

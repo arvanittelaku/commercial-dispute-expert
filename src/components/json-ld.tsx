@@ -23,7 +23,7 @@ export function OrganizationJsonLd() {
     description: siteConfig.connectorPitch,
     url: absoluteUrl("/"),
     email: contact.email,
-    inLanguage: "en-GB",
+    inLanguage: "en",
     areaServed: expert.jurisdictions
       .filter((j) => !isPlaceholder(j))
       .map((j) => ({ "@type": "AdministrativeArea", name: j })),
@@ -72,7 +72,7 @@ export function WebSiteJsonLd() {
     name: siteConfig.businessName,
     url: absoluteUrl("/"),
     description: siteConfig.connectorPitch,
-    inLanguage: "en-GB",
+    inLanguage: "en",
     publisher: { "@id": `${absoluteUrl("/")}#organization` },
   };
 
@@ -143,11 +143,11 @@ export function ServiceJsonLd({ service }: { service: ServiceContent }) {
         description: service.metaDescription,
         url: absoluteUrl(service.path),
         provider: { "@id": `${absoluteUrl("/")}#organization` },
-        areaServed: { "@type": "Country", name: "United Kingdom" },
+        areaServed: { "@type": "Place", name: "Worldwide" },
         serviceType: service.title,
         audience: {
           "@type": "Audience",
-          audienceType: "Solicitors and barristers",
+          audienceType: "Legal professionals",
         },
       }}
     />
@@ -195,7 +195,7 @@ export function ArticleJsonLd({
         image: [absoluteUrl("/opengraph-image")],
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
         url,
-        inLanguage: "en-GB",
+        inLanguage: "en",
       }}
     />
   );
@@ -210,10 +210,10 @@ export function BlogJsonLd() {
         "@id": `${absoluteUrl("/insights")}#blog`,
         name: `${siteConfig.businessName} Insights`,
         description:
-          "Articles for UK solicitors on commercial dispute expert witnesses, forensic accounting and CPR Part 35.",
+          "Articles for legal professionals on commercial dispute expert witnesses, forensic accounting and expert evidence.",
         url: absoluteUrl("/insights"),
         publisher: { "@id": `${absoluteUrl("/")}#organization` },
-        inLanguage: "en-GB",
+        inLanguage: "en",
       }}
     />
   );

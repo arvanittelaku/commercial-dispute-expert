@@ -22,11 +22,7 @@ export default function ContactPage() {
       <p className="mt-6 max-w-3xl text-lg text-foreground">
         Enquiries are treated confidentially. We respond to solicitors, barristers and authorised
         representatives. Submit case details for expert matching - we do not publish fee quotes on
-        this site; see our{" "}
-        <a href="/fees" className="font-medium text-brand-green underline">
-          fees guide
-        </a>{" "}
-        for industry benchmarks only.
+        this site; indicative industry benchmarks are shown on the home page for reference only.
       </p>
 
       <div className="mt-12 grid min-w-0 gap-10 lg:grid-cols-2 lg:gap-12">

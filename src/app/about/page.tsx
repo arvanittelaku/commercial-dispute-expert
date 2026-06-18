@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 
 export const metadata = buildMetadata({
-  title: "About - Commercial Dispute Expert Witness UK",
+  title: "About - Commercial Dispute Expert Witness",
   description: siteConfig.description,
   path: "/about",
 });
@@ -28,8 +28,7 @@ export default function AboutPage() {
           <p className="mt-4 leading-relaxed text-foreground">
             Solicitors and counsel submit case details confidentially. We assess scope, conflicts and
             suitability, then introduce a qualified forensic accountant or commercial dispute expert
-            witness from our network. Experts owe their duty to the court under CPR Part 35 where
-            formally appointed.
+            witness from our network. Experts owe their duty to the court where formally appointed.
           </p>
         </section>
         <section className="mt-12 max-w-3xl">
